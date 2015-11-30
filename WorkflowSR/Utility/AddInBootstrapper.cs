@@ -1,6 +1,6 @@
 ﻿using Autofac;
 using NLog;
-using WorkflowSR.Service;
+using WorkflowSR.Service.Service;
 using WorkflowSR.ViewModel;
 
 namespace WorkflowSR.Utility
@@ -15,7 +15,7 @@ namespace WorkflowSR.Utility
 
             var builder = new ContainerBuilder();
             builder.RegisterType<WorkflowViewModel>().As<IWorkflowViewModel>();
-            builder.RegisterType<WorkflowService>().As<IWorkflowService>();
+            builder.RegisterType<WorkflowService>().As<IWorkflowService>().InstancePerLifetimeScope();
 
             var container = builder.Build();
 

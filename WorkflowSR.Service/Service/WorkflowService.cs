@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WorkflowSR.Service
+namespace WorkflowSR.Service.Service
 {
     public interface IWorkflowService
     {
@@ -8,7 +8,7 @@ namespace WorkflowSR.Service
         void Archive();
     }
 
-    class WorkflowService : IWorkflowService
+    public class WorkflowService : IWorkflowService
     {
         public void Archive()
         {
@@ -19,5 +19,7 @@ namespace WorkflowSR.Service
         {
             throw new NotImplementedException();
         }
+
     }
+
 }

@@ -1,4 +1,4 @@
-﻿namespace WorkflowSR.Model
+﻿namespace WorkflowSR.Model.Model
 {
     public class Case
     {

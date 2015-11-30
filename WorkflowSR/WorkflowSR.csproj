@@ -167,11 +167,9 @@
     can be found.
   -->
   <ItemGroup>
-    <Compile Include="Model\Case.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Service\WorkflowService.cs" />
     <Compile Include="Utility\AddInBootstrapper.cs" />
     <Compile Include="ViewModel\WorkflowViewModel.cs" />
     <Compile Include="View\ArchiveSettingWindow.xaml.cs">

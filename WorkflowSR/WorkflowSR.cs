@@ -1,4 +1,5 @@
 ﻿using Microsoft.Office.Tools.Ribbon;
+using WorkflowSR.View;
 
 namespace WorkflowSR
 {
@@ -11,12 +12,12 @@ namespace WorkflowSR
 
         private void CategoryOption_Click(object sender, RibbonControlEventArgs e)
         {
-
+            ArchiveSettingWindow archiveSettingWindow = new ArchiveSettingWindow();
         }
 
         private void ArchiveOption_Click(object sender, RibbonControlEventArgs e)
         {
-
+            CategorySettingWindow categorySettingWindows = new CategorySettingWindow();
         }
     }
 }
