@@ -174,6 +174,12 @@
     <Compile Include="Service\WorkflowService.cs" />
     <Compile Include="Utility\AddInBootstrapper.cs" />
     <Compile Include="ViewModel\WorkflowViewModel.cs" />
+    <Compile Include="View\ArchiveSettingWindow.xaml.cs">
+      <DependentUpon>ArchiveSettingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CategorySettingWindow.xaml.cs">
+      <DependentUpon>CategorySettingWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WorkflowSR.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -221,7 +227,24 @@
     <None Include="WorkflowSR_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="View\" />
+    <ProjectReference Include="..\WorkflowSR.Model\WorkflowSR.Model.csproj">
+      <Project>{74006104-a245-48e5-a257-562c9de9e286}</Project>
+      <Name>WorkflowSR.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WorkflowSR.Service\WorkflowSR.Service.csproj">
+      <Project>{2d31336d-dfe4-407d-890c-e2544a193c9c}</Project>
+      <Name>WorkflowSR.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="View\ArchiveSettingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CategorySettingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

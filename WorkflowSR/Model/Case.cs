@@ -29,5 +29,12 @@
             get { return _contactName; }
             set { _contactName = value; }
         }
+
+        private string _contactPhone;
+        public string ContactPhone
+        {
+            get { return _contactPhone; }
+            set { _contactPhone = value; }
+        }
     }
 }
