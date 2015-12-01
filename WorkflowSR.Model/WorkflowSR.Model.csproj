@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\ArchiveSettingWindowModel.cs" />
     <Compile Include="Model\Case.cs" />
+    <Compile Include="Model\CategorySettingWindowModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

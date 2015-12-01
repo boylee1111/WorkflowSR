@@ -171,6 +171,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Utility\AddInBootstrapper.cs" />
+    <Compile Include="ViewModel\ArchiveSettingWindowViewModel.cs" />
+    <Compile Include="ViewModel\CategorySettingWindowViewModel.cs" />
+    <Compile Include="ViewModel\ViewModelBase.cs" />
     <Compile Include="ViewModel\WorkflowViewModel.cs" />
     <Compile Include="View\ArchiveSettingWindow.xaml.cs">
       <DependentUpon>ArchiveSettingWindow.xaml</DependentUpon>

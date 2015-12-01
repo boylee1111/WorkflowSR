@@ -1,4 +1,5 @@
-﻿using WorkflowSR.Utility;
+﻿using Autofac;
+using WorkflowSR.Utility;
 
 namespace WorkflowSR
 {
@@ -8,6 +9,12 @@ namespace WorkflowSR
         public AddInBootstrapper Bootstrapper
         {
             get { return _bootstrapper; }
+        }
+
+        private IContainer _container;
+        public IContainer Container
+        {
+            get { return _container; }
         }
 
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
@@ -23,7 +30,7 @@ namespace WorkflowSR
         public override void BeginInit()
         {
             _bootstrapper = new AddInBootstrapper();
-            _bootstrapper.Initilize();
+            _container = _bootstrapper.InitilizeContainer();
 
             base.BeginInit();
         }
